@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Registro</title>
+      <link rel="stylesheet" href="estilos/index.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body onload="recuperarDatos()">
+      <div class="contenedor">
+         <div class="titulo-texto">
+            <div class="titulo estudiante">
+               Formulario
+            </div>
+            <div class="titulo docente">
+               Formulario
+            </div>
+         </div>
+         <div class="form-contenedor">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="signup">
+               <label for="login" class="slide login">Docente</label>
+               <label for="signup" class="slide signup">Estudiante</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="tests.html" class="login">
+                  <div class="field">
+                     <input type="text" placeholder="Nombres" id="nombreDocente" required>
+                  </div>
+                  <div class="field">
+                     <input type="text" placeholder="Apellidos" id="apellidoDocente" required>
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="Profesion" id= "profesionDocente" required>
+                 </div>
+                 <div class="field">
+                    <input type="email" placeholder="Email" id="emailDocente" required>
+                 </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Registrar" onclick="guardarDatos()">
+                  </div>
+               </form>
+               <form action="tests.html" class="signup">
+                  <div class="field">
+                     <input type="text" placeholder="Nombres" id="nombreEstudiante" required>
+                  </div>
+                  <div class="field">
+                     <input type="text" placeholder="Apellidos" id="apellidoEstudiante" required>
+                  </div>
+                  <div class="field">
+                     <input type="email" placeholder="Email" id="emailEstudiante" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Registrar" onclick="guardarDatos()">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <script>
+         const loginText = document.querySelector(".titulo-texto .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+         signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+         });
+         loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%";
+         });
+      </script>
+      <script src="lclstoreindex.js"></script>
+   </body>
+</html>
