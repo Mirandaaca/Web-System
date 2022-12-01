@@ -954,10 +954,10 @@ function SumarFactorD(){
         SumaTotalFactorD = SumaTotalFactorD + n.ValordeRespuesta;
     })
     ResumenFactores[0] = {
-        FactorFinal: " ",
+        FactorFinal: "",
         Factor: "",
-        Mensaje: " ",
-        PuntajeTotal: " "
+        Mensaje: "",
+        PuntajeTotal: ""
     }
 }
 function SumarFactorA(){
@@ -1162,8 +1162,8 @@ function SumarFactorE(){
             break;
     }
     ResumenFactores[4] = {
-        Factor: "Factor E",
         FactorFinal: FactorE,
+        Factor: "Factor E",
         Mensaje: MensajeFactorE,
         PuntajeTotal: SumaTotalFactorE
     }
