@@ -957,7 +957,7 @@ function SumarFactorD(){
         FactorFinal: " ",
         Factor: "",
         Mensaje: " ",
-        PuntajeTotal: SumaTotalFactorD
+        PuntajeTotal: " "
     }
 }
 function SumarFactorA(){
