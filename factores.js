@@ -1686,19 +1686,19 @@ function SumarFactorQ2(){
             MensajeFactorQ2 = "Los Q2- demuestran una preferencia por estar en grupo la mayor parte del tiempo y toman sus decisiones con base a lo que piensan otros y lo que establece la sociedad, en vez de utilizar su propio juicio, y necesitan sentir que pertenecen a un grupo donde son aceptados y queridos.";
             break;
         case 7:
-            FactorQ2 = "F4M";
+            FactorQ2 = "4M";
             MensajeFactorQ2 = "";
             break;
         case 8:
-            FactorQ2 = "F5M";
+            FactorQ2 = "5M";
             MensajeFactorQ2 = "";
             break;
         case 9:
-            FactorQ2 = "F6M";
+            FactorQ2 = "6M";
             MensajeFactorQ2 = "";
             break;
         case 10:
-            FactorQ2 = "F7A";
+            FactorQ2 = "7A";
             MensajeFactorQ2 = "Los que obtienen puntuaciones altas en este factor (Q2+) son autosuficientes que acostumbran tomar decisiones sin preocuparse por las opiniones ajenas, prefieren estar solos la mayor parte del tiempo y hacen sus cosas sin pedir ayuda a los demás.";
             break;
         case 11:
